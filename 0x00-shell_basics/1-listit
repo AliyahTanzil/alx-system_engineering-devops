@@ -1,2 +1,2 @@
 #!/bin/bash
-dir
+ls -x -w 30
