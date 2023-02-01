@@ -1,5 +1,4 @@
 
-
 global
 	log /dev/log	local0
 	log /dev/log	local1 notice
@@ -41,13 +40,13 @@ frontend  ssesaymohamed-frontend-http
 	http-request set-header X-Forwarded-Proto http
         default_backend sesaymohamed-backend
 
-frontend ehoneah-frontend-https
+frontend sesaymohamed-frontend-https
 	bind *:443 ssl crt /etc/haproxy/certs/www.sesaymohamed.tech.pem
 	http-request set-header X-Forwarded-Proto https
 	http-request redirect scheme https code 301 unless { ssl_fc }
-	default_backend ehoneah-backend
+	default_backend sesaymohamed-backend
 
-backend ehoneah-backend
+backend sesaymohamed-backend
         balance roundrobin
         server 63210-web-01 34.224.15.136:80 check
         server 63210-web-02 3.86.7.84:80 check
