@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-#This script comannd is to get Apche2 running
-sudo service apache2 start
