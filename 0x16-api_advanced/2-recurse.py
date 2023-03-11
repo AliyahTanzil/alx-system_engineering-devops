@@ -26,4 +26,7 @@ def recurse(subreddit, hot_list=[]):
         return hot_list
     else:
         return (None)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 630e5f6168fea8dc78fd30f36c063a96fb1b097d

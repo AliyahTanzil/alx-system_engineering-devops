@@ -52,4 +52,7 @@ def count_words(subreddit, word_list, after="", count=[]):
                     print("{}: {}".format(word_list[i].lower(), count[i]))
         else:
             count_words(subreddit, word_list, after, count)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 630e5f6168fea8dc78fd30f36c063a96fb1b097d

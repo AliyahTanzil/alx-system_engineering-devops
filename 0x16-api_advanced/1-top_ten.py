@@ -31,4 +31,7 @@ def top_ten(subreddit):
 
     except Exception:
         print("None")
+<<<<<<< HEAD
 
+=======
+>>>>>>> 630e5f6168fea8dc78fd30f36c063a96fb1b097d
