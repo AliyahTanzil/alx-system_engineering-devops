@@ -1,6 +1,9 @@
 from request import get
 
 
+"""
+This function will count all words
+"""
 def count_words(subreddit, word_list, count_dict=None):
     if not count_dict:
         count_dict = {}
