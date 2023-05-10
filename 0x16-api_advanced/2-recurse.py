@@ -1,6 +1,7 @@
 #!usr/bin/python3
 from requests import get
 
+
 def recurse(subreddit, hot_list=None, after=None):
     if hot_list is None:
         hot_list = []
@@ -9,7 +10,7 @@ def recurse(subreddit, hot_list=None, after=None):
     params = {'after': after}
     if after:
         params['after'] = after
-    response = requests.get(url, headers=headers, params=params, allow_redirects=False)
+    response = requests.get(url, headers=headers, params=params)
     if response.status_code == 200:
         data = response.json()
         children = data['data']['children']
@@ -20,4 +21,3 @@ def recurse(subreddit, hot_list=None, after=None):
         return hot_list
     else:
         return None
-

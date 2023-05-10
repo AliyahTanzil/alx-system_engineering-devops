@@ -1,4 +1,5 @@
-import requests
+from request import get
+
 
 def count_words(subreddit, word_list, count_dict=None):
     if not count_dict:
@@ -26,4 +27,3 @@ def count_words(subreddit, word_list, count_dict=None):
         return
     else:
         return count_words(subreddit, word_list, count_dict=count_dict)
-
