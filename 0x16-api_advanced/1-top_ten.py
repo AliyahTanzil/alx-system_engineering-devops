@@ -2,6 +2,10 @@
 from requests import get
 
 
+"""
+this function will query the Reddit API and it will print 
+only the first ten hot post
+"""
 def top_ten(subreddit):
     url = 'https://www.reddit.com/r/{subreddit}/hot.json'.format(subreddit)
     headers = {'User-Agent': 'Mozilla/5.0'}
